@@ -550,7 +550,6 @@ footer .widget_title_text {
         display: flex;
         flex: 1;
         justify-content: center;
-        /* Removendo a margem da esquerda do logo, para ele não ficar tão ao centro */
         margin-left:0px;
     }
 
@@ -561,31 +560,22 @@ footer .widget_title_text {
 
     .menu {
         flex: 2;
-        /* Removido o padding-right da div .menu, para que a div do menu não fique tão ao centro.  */
     }
 
     nav ul {
         flex-direction: column;
         display: none;
         background-color: #ffffff;
-        /* Colocando um position:absolute para que minha lista fique acima dos outros elementos. */
         position: absolute;
-        /* Colocando um left:0 para que este elemento fique colado no lado esquerdo da página e um top:90px para que desgrude de cima da tela*/
         left:0;
         top:90px;
-        /* Colocando uma largura de 100% para que a lista fique até o final da tela horizontalmente. */
         width:100%;
-        /* Uma cor de fundo branca */
         background-color: #fff;
-        /* Arredondando um pouco a borda */
         border-radius: 7px;
-        /* Dando um espaçamento embaixo */
         padding-bottom:10px;
-        /* Criando uma sombra de 0px a direita, 3px para baixo e 7px de esfumaçamento: */
         box-shadow: 0px 3px 7px #2b4c99;
     }
 
-    /* Estilizando os itens do menu */
     nav ul a {
         padding:15px;
         font-weight: bold;
@@ -687,9 +677,7 @@ footer .widget_title_text {
     }
 
     .menuMobile {
-        /* Diminuindo o tamanho do menuMobile nessa largura de tela: */
         width:35px;
         height: 35px;
     }
 }
-

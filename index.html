@@ -5,16 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Medicenter</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Inserindo o código js que será responsável por, ao clicármos na div "menuMobile", esse menu será expandido (ficará visível, pois
-    atualmente ele permanece com display:none). -->
     <script type="text/javascript">
-        /*Primeiramente, selecionamos nossa div "menuMobile" */
         window.onload = function(){
-            document.querySelector(".menuMobile")/*Agora fazemos adicionar um evento para quando clicar*/.addEventListener("click",function(){
-                /*Se a minha lista estiver sendo exibida (ou seja, se a largura da tela for menor que 870px), então:*/
+            document.querySelector(".menuMobile").addEventListener("click",function(){
                 if(document.querySelector(".menu nav ul").style.display == 'flex') {
-                    /*se minha ul estiver com display:none (que é o padrão que definimos) e clicarmos, ela ficará com display:flex (os itens do
-                    menu serão exibidos). Ao clicarmos novamente, voltará a ter display:none */
                     document.querySelector(".menu nav ul").style.display = 'none';
                 } else {
                     document.querySelector(".menu nav ul").style.display = 'flex';
